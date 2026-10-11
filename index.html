@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brightmoss Dental · Family dentist in Tansy Cross</title>
+<meta name="description" content="Brightmoss Dental is a friendly family practice in Tansy Cross: check-ups, children's dentistry, hygiene visits, same-day emergency appointments, clear aligners and whitening.">
+<meta name="theme-color" content="#0D7A43">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 44'%3E%3Cpath d='M9 17c0-6 4.5-9 9-8 1 .2 1.6.6 2 .6s1-.4 2-.6c4.5-1 9 2 9 8 0 5-2.4 7.6-3.2 12.6-.8 5-2 9.4-4.3 9.4-2.1 0-2.2-7.2-3.5-7.2s-1.4 7.2-3.5 7.2c-2.3 0-3.5-4.4-4.3-9.4C11.4 24.6 9 22 9 17z' fill='%23FFC93C' stroke='%231E1B3A' stroke-width='2'/%3E%3Cpath d='M20 6.5C18.8 3.4 16 2.2 13.2 2.8c.8 2.8 3.4 4.4 6.8 3.7zM20 5.2c1-3 3.8-4.6 6.8-4-.6 3-3.4 4.8-6.8 4z' fill='%233CC46B' stroke='%231E1B3A' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
+<script>
+  document.documentElement.classList.add("js");
+  // Before the photos exist, a missing image shows its coloured frame instead of a broken icon.
+  addEventListener("error", function (e) { var t = e.target; if (t && t.tagName === "IMG") t.classList.add("missing"); }, true);
+</script>
+<style>
+  :root {
+    --cream: #FFF8EA;
+    --paper: #FFFFFF;
+    --ink: #1E1B3A;
+    --muted: #57536E;
+    --leaf: #0D7A43;
+    --leaf-deep: #0A6236;
+    --leaf-bright: #3CC46B;
+    --sprout: #E9F6D3;
+    --sun: #FFC93C;
+    --sun-soft: #FFF0C7;
+    --coral: #FF6A3D;
+    --line: rgba(30, 27, 58, .14);
+    --r-lg: 32px;
+    --r-md: 24px;
+    --r-sm: 16px;
+    --ease: cubic-bezier(.33, 0, .11, 1);
+    --pop: cubic-bezier(.22, 1, .36, 1);
+    --pad: clamp(20px, 5vw, 72px);
+    --max: 1296px;
+    --fh: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+    --fb: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 var(--fb); -webkit-font-smoothing: antialiased; }
+  main { display: block; overflow-x: clip; }
+  img { display: block; max-width: 100%; }
+  img.missing { opacity: 0; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--fh); font-weight: 800; line-height: 1.02; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+  h2 { font-size: clamp(36px, 4.6vw, 66px); }
+  h3 { font-size: clamp(21px, 1.7vw, 26px); letter-spacing: -.01em; line-height: 1.12; }
+  p { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+  .site-head:not(.stuck):not(.open) :focus-visible, .hero :focus-visible, .visit :focus-visible, .book-side :focus-visible, .site-foot :focus-visible, .svc.leaf:focus-visible, .svc.big:focus-visible, .plan.family :focus-visible { outline-color: var(--sun); }
+  section[id] { scroll-margin-top: 92px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--sun); color: var(--ink); padding: 10px 16px; border-radius: 99px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: 100%; max-width: calc(var(--max) + 2 * var(--pad)); margin: 0 auto; padding: 0 var(--pad); }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 700 13px/1 var(--fb); letter-spacing: .14em; text-transform: uppercase; }
+  .eyebrow::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--sun); box-shadow: 0 0 0 3px rgba(255, 201, 60, .28); }
+  .lead { font-size: clamp(17px, 1.3vw, 19px); color: var(--muted); max-width: 52ch; }
+  .media { position: relative; overflow: hidden; background: linear-gradient(140deg, var(--sprout), #CDEBB0 60%, var(--sun-soft)); }
+  .media img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Buttons: rounded pills with an arrow circle. */
+  .pill { display: inline-flex; align-items: center; gap: 14px; min-height: 60px; padding: 8px 10px 8px 30px; border-radius: 99px; border: 0; background: var(--sun); color: var(--ink); font: 700 16px/1 var(--fb); text-decoration: none; transition: background .4s var(--pop), transform .4s var(--pop), box-shadow .4s var(--pop); }
+  .pill .arr { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: var(--sun); transition: transform .5s var(--pop); flex: none; }
+  .pill .arr svg { width: 18px; height: 18px; }
+  .pill:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px rgba(30, 27, 58, .5); }
+  .pill:hover .arr { transform: rotate(-45deg); }
+  .pill.ink { background: var(--ink); color: var(--cream); }
+  .pill.ink .arr { background: var(--sun); color: var(--ink); }
+  .link-arrow { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; text-decoration: none; letter-spacing: .01em; transition: letter-spacing .5s var(--pop); }
+  .link-arrow i { position: relative; display: block; width: 28px; height: 2px; background: currentColor; transition: width .5s var(--pop); }
+  .link-arrow i::after { content: ""; position: absolute; right: -1px; top: -4px; width: 8px; height: 8px; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); }
+  .link-arrow:hover { letter-spacing: .05em; }
+  .link-arrow:hover i { width: 44px; }
+  .badge-arrow { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--paper); color: var(--ink); transition: transform .5s var(--pop), background .4s var(--pop); flex: none; }
+  .badge-arrow svg { width: 18px; height: 18px; }
+
+  /* Intro: a sun rises behind the mark, then the curtain lifts (CSS only, never blocks clicks). */
+  .intro { display: none; }
+  .js .intro { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; background: var(--cream); pointer-events: none; border-radius: 0 0 50% 50% / 0 0 0 0; animation: curtain .95s var(--ease) 1.25s forwards; }
+  .intro-in { display: grid; justify-items: center; gap: 18px; }
+  .intro-mark { position: relative; width: 92px; height: 100px; }
+  .intro-mark .sun-disc { position: absolute; left: 50%; top: 50%; width: 130px; height: 130px; margin: -65px 0 0 -65px; border-radius: 50%; background: var(--sun-soft); transform: scale(0); animation: grow .8s var(--pop) .1s forwards; }
+  .intro-mark svg { position: relative; width: 100%; height: 100%; opacity: 0; transform: translateY(18px) scale(.85); animation: rise .7s var(--pop) .25s forwards; }
+  .intro-word { font: 800 30px/1 var(--fh); letter-spacing: -.02em; overflow: hidden; }
+  .intro-word span { display: inline-block; transform: translateY(105%); animation: up .7s var(--pop) .45s forwards; }
+  @keyframes curtain { to { transform: translateY(-104%); border-radius: 0 0 50% 50% / 0 0 22% 22%; visibility: hidden; } }
+  @keyframes grow { to { transform: scale(1); } }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @keyframes up { to { transform: none; } }
+
+  /* Header: transparent over the hero, a cream pill once you scroll. */
+  .site-head { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px 30px 0; pointer-events: none; transition: padding .5s var(--ease); }
+  .bar { pointer-events: auto; display: flex; align-items: center; gap: 24px; max-width: 1380px; margin: 0 auto; padding: 10px 10px 10px 22px; border-radius: 99px; color: var(--cream); background: transparent; transition: background .5s var(--ease), color .5s var(--ease), box-shadow .5s var(--ease), padding .5s var(--ease); }
+  .site-head.stuck { padding-top: 12px; }
+  .site-head.stuck .bar, .site-head.open .bar { background: rgba(255, 248, 234, .96); color: var(--ink); box-shadow: 0 10px 30px -18px rgba(30, 27, 58, .45), 0 0 0 1px var(--line); }
+  .logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
+  .logo svg { width: 34px; height: 38px; }
+  .logo b { font: 800 23px/1 var(--fh); letter-spacing: -.03em; }
+  .logo small { display: block; font: 700 10px/1 var(--fb); letter-spacing: .24em; text-transform: uppercase; margin-top: 4px; opacity: .85; }
+  .nav { position: relative; display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .nav a { position: relative; z-index: 1; padding: 10px 14px; border-radius: 99px; font-weight: 600; font-size: 15px; text-decoration: none; transition: color .4s var(--ease), letter-spacing .5s var(--pop); }
+  .nav a:hover { letter-spacing: .03em; }
+  .nav a.active { color: var(--ink); }
+  .nav .dot { position: absolute; z-index: 0; top: 50%; left: 0; height: 38px; margin-top: -19px; width: 0; border-radius: 99px; background: var(--sun); opacity: 0; transition: transform .55s var(--pop), width .55s var(--pop), opacity .3s; }
+  .head-tel { font-weight: 700; font-size: 15px; text-decoration: none; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+  .head-tel svg { width: 16px; height: 16px; }
+  .bar .pill { min-height: 48px; padding: 6px 6px 6px 22px; font-size: 15px; gap: 10px; }
+  .bar .pill .arr { width: 36px; height: 36px; }
+  .menu-btn { display: none; margin-left: auto; width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--sun); color: var(--ink); place-items: center; }
+  .menu-btn span { position: relative; display: block; width: 18px; height: 2px; background: currentColor; transition: background .2s; }
+  .menu-btn span::before, .menu-btn span::after { content: ""; position: absolute; left: 0; width: 18px; height: 2px; background: currentColor; transition: transform .35s var(--pop); }
+  .menu-btn span::before { top: -6px; } .menu-btn span::after { top: 6px; }
+  .menu-btn[aria-expanded="true"] span { background: transparent; }
+  .menu-btn[aria-expanded="true"] span::before { transform: translateY(6px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span::after { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Hero */
+  .hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 43fr) minmax(0, 57fr); margin: 12px; min-height: max(700px, calc(100svh - 24px)); border-radius: var(--r-lg); background: var(--leaf); color: var(--cream); overflow: hidden; }
+  .hero::before { content: ""; position: absolute; z-index: -1; left: -12%; bottom: -38%; width: 70%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(60, 196, 107, .5), rgba(60, 196, 107, 0) 68%); }
+  .hero-copy { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(128px, 17vh, 170px) 0 48px var(--pad); }
+  .hero-copy .eyebrow { margin-bottom: 26px; }
+  .hero h1 { font-size: clamp(48px, 5.7vw, 92px); line-height: .98; letter-spacing: -.025em; max-width: 11ch; }
+  .hero h1 em { font-style: normal; color: var(--sun); }
+  .hero-copy > p:not(.eyebrow) { margin-top: 26px; font-size: clamp(17px, 1.3vw, 19px); max-width: 40ch; }
+  .hero-cta { margin-top: auto; padding-top: 34px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; }
+  .hero-tel { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; line-height: 1.3; }
+  .hero-tel svg { width: 20px; height: 20px; flex: none; }
+  .hero-tel b { display: block; font-size: 18px; }
+  .hero-media { position: relative; margin: 104px 12px 12px 0; min-height: 520px; }
+  .hero-photo { position: absolute; z-index: 2; top: 0; right: 0; bottom: 0; width: 60%; margin: 0; border-radius: var(--r-md); }
+  .hero-frame { position: absolute; left: 0; top: 40%; width: 50%; aspect-ratio: 16 / 11; margin: 0; border-radius: var(--r-md); box-shadow: 0 30px 60px -30px rgba(10, 40, 20, .7); z-index: 3; }
+  .hero-frame .media { width: 100%; height: 100%; border-radius: var(--r-md); border: 6px solid var(--cream); background: linear-gradient(140deg, #FFE59A, var(--sun-soft)); }
+  .hero-sun { position: absolute; z-index: 1; left: 30%; top: 6%; width: 190px; height: 190px; border-radius: 50%; background: var(--sun); }
+  .badge { position: absolute; z-index: 3; left: 0; top: 0; width: 132px; height: 132px; transform: translate(-46%, -46%); border-radius: 50%; background: var(--ink); color: var(--cream); }
+  .badge svg.ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 22s linear infinite; }
+  .badge .tooth { position: absolute; left: 50%; top: 50%; width: 44px; height: 48px; transform: translate(-50%, -50%); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .scroll-hint { position: absolute; left: 43%; bottom: 26px; z-index: 4; display: inline-flex; align-items: center; gap: 12px; font: 700 12px/1 var(--fb); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+  .bars { display: inline-flex; align-items: flex-end; gap: 3px; height: 16px; }
+  .bars i { width: 3px; height: 100%; border-radius: 2px; background: var(--sun); animation: wave 1s ease-in-out infinite alternate; transform-origin: bottom; }
+  .bars i:nth-child(2) { animation-delay: -.3s; } .bars i:nth-child(3) { animation-delay: -.6s; } .bars i:nth-child(4) { animation-delay: -.15s; }
+  @keyframes wave { from { transform: scaleY(.25); } to { transform: scaleY(1); } }
+  /* Hero entrance after the intro */
+  .js .hero-photo { animation: wipe 1.3s var(--ease) 1.45s both; }
+  .js .hero-photo img { animation: settle 2s var(--ease) 1.45s both; }
+  .js .hero-copy > * { animation: lift 1s var(--ease) both; }
+  .js .hero-copy > :nth-child(1) { animation-delay: 1.35s; } .js .hero-copy > :nth-child(2) { animation-delay: 1.45s; } .js .hero-copy > :nth-child(3) { animation-delay: 1.6s; } .js .hero-copy > :nth-child(4) { animation-delay: 1.75s; }
+  .js .hero-frame { animation: pop 1.1s var(--pop) 1.85s both; }
+  .js .hero-sun { animation: sunrise 1.4s var(--pop) 1.6s both; }
+  @keyframes wipe { from { clip-path: inset(100% 0 0 0 round 24px); } to { clip-path: inset(0 0 0 0 round 24px); } }
+  @keyframes settle { from { transform: scale(1.18); } to { transform: none; } }
+  @keyframes lift { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+  @keyframes pop { from { opacity: 0; transform: translateY(50px) scale(.92); } to { opacity: 1; transform: none; } }
+  @keyframes sunrise { from { transform: translateY(120px) scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
+
+  /* Reveal on scroll (only with JS) */
+  .js [data-reveal] { opacity: 0; transform: translateY(46px); transition: opacity 1s var(--ease), transform 1s var(--ease); transition-delay: var(--d, 0s); }
+  .js [data-reveal="clip"] { opacity: 1; transform: none; clip-path: inset(14% 10% 14% 10% round 24px); transition: clip-path 1.2s var(--ease); }
+  .js [data-reveal="clip"] img { transform: scale(1.14); transition: transform 1.6s var(--ease); }
+  .js [data-reveal].in { opacity: 1; transform: none; }
+  .js [data-reveal="clip"].in { clip-path: inset(0 0 0 0 round 24px); }
+  .js [data-reveal="clip"].in img { transform: none; }
+
+  /* Statement with floating photos */
+  .statement { position: relative; padding: clamp(110px, 14vw, 180px) 0 clamp(90px, 10vw, 140px); }
+  .statement-text { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; padding: 0 var(--pad); text-align: center; }
+  .statement-text .eyebrow { margin-bottom: 30px; color: var(--leaf); }
+  .statement h2 { font-size: clamp(32px, 4vw, 58px); line-height: 1.08; }
+  .js .statement h2 .w { opacity: .16; transition: opacity .35s linear; }
+  .js .statement h2 .w.on { opacity: 1; }
+  .statement-text > p { margin: 34px auto 0; max-width: 54ch; color: var(--muted); font-size: 18px; }
+  .floats { display: flex; justify-content: center; gap: 18px; margin-top: 56px; padding: 0 var(--pad); }
+  .float { margin: 0; border-radius: var(--r-md); flex: 1 1 0; max-width: 280px; }
+  .float .media { border-radius: var(--r-md); }
+  .f1 .media { aspect-ratio: 4 / 5; } .f2 .media { aspect-ratio: 1; } .f3 .media { aspect-ratio: 4 / 3; }
+  .f2 { align-self: center; } .f3 { align-self: flex-end; }
+
+  /* Services */
+  .services { padding: clamp(40px, 6vw, 80px) 0 clamp(90px, 10vw, 140px); }
+  .sec-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 60px; margin-bottom: clamp(36px, 5vw, 64px); }
+  .sec-head .eyebrow { margin-bottom: 18px; color: var(--leaf); }
+  .svc-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .svc { position: relative; display: flex; flex-direction: column; min-height: 340px; padding: 26px; border-radius: var(--r-md); text-decoration: none; overflow: hidden; isolation: isolate; transition: transform .6s var(--pop), box-shadow .6s var(--pop); }
+  .svc:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -26px rgba(30, 27, 58, .55); }
+  .svc:hover .badge-arrow { transform: rotate(45deg); background: var(--sun); }
+  .svc-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .svc-num { font: 800 15px/1 var(--fh); letter-spacing: .04em; padding: 8px 12px; border-radius: 99px; background: rgba(255, 255, 255, .55); }
+  .svc-ico { width: 54px; height: 54px; margin: 22px 0 0; }
+  .svc-body { margin-top: auto; padding-top: 26px; }
+  .svc-body p { margin-top: 10px; font-size: 16px; line-height: 1.5; }
+  .svc-price { display: inline-block; margin-top: 16px; padding: 6px 12px; border-radius: 99px; font-size: 14px; font-weight: 700; background: rgba(255, 255, 255, .6); }
+  .svc.big { grid-column: span 2; color: var(--cream); min-height: 420px; background: var(--leaf-deep); }
+  .svc.big .media { position: absolute; inset: 0; z-index: -2; background: linear-gradient(140deg, #1E9A58, var(--leaf-deep)); }
+  .svc.big .media img { transition: transform 1.2s var(--ease); }
+  .svc.big:hover .media img { transform: scale(1.06); }
+  .svc.big::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(12, 20, 26, .9), rgba(12, 20, 26, .72) 34%, rgba(12, 20, 26, .2) 66%, rgba(12, 20, 26, .05)); }
+  .svc.big .svc-num, .svc.big .svc-price { background: rgba(14, 22, 30, .55); }
+  .svc.big h3 { font-size: clamp(28px, 2.6vw, 40px); }
+  .svc.big p { max-width: 40ch; }
+  .svc.sun { background: var(--sun); }
+  .svc.sprout { background: var(--sprout); }
+  .svc.coral { background: var(--coral); }
+  .svc.paper { background: var(--paper); box-shadow: inset 0 0 0 1.5px var(--line); }
+  .svc.paper .badge-arrow, .svc.paper .svc-num, .svc.paper .svc-price { background: var(--sprout); }
+  .svc.leaf { background: var(--leaf); color: var(--cream); }
+  .svc.leaf .svc-num, .svc.leaf .svc-price { background: var(--leaf-deep); }
+  .svc.ask { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
+  .svc.ask .svc-num { background: var(--sun); }
+  .svc.ask h3 { font-size: clamp(24px, 2vw, 30px); }
+
+  /* Emergency band */
+  .urgent { margin: 0 12px; border-radius: var(--r-lg); background: var(--coral); color: var(--ink); overflow: hidden; }
+  .urgent .wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: center; gap: 30px 60px; padding-top: clamp(56px, 7vw, 96px); padding-bottom: clamp(56px, 7vw, 96px); }
+  .urgent h2 { font-size: clamp(34px, 4.2vw, 60px); }
+  .urgent p { margin-top: 18px; font-size: 18px; max-width: 46ch; }
+  .urgent-call { display: grid; justify-items: start; gap: 16px; }
+  .urgent-call small { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
+  .call { position: relative; font-size: clamp(17px, 1.5vw, 20px); }
+  .call::before { content: ""; position: absolute; inset: 0; border-radius: 99px; box-shadow: 0 0 0 0 rgba(30, 27, 58, .35); animation: breathe 3.5s ease-in-out infinite; }
+  @keyframes breathe { 0%, 100% { box-shadow: 0 0 0 0 rgba(30, 27, 58, .32); } 50% { box-shadow: 0 0 0 14px rgba(30, 27, 58, 0); } }
+
+  /* Plans and prices */
+  .plans { margin: clamp(90px, 10vw, 140px) 12px 0; border-radius: var(--r-lg); background: var(--sprout); padding: clamp(70px, 9vw, 120px) 0; }
+  .plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .plan { position: relative; display: flex; flex-direction: column; padding: clamp(28px, 3.4vw, 46px); border-radius: var(--r-md); background: var(--paper); }
+  .plan .tag { font: 700 13px/1 var(--fb); letter-spacing: .14em; text-transform: uppercase; color: var(--leaf); }
+  .plan h3 { margin-top: 16px; font-size: clamp(28px, 2.8vw, 40px); }
+  .plan .price { margin-top: 22px; font: 800 clamp(40px, 4.4vw, 62px)/1 var(--fh); letter-spacing: -.03em; }
+  .plan .price small { font: 600 16px/1.3 var(--fb); letter-spacing: 0; margin-left: 6px; }
+  .plan > p { margin-top: 14px; color: var(--muted); max-width: 44ch; }
+  .plan ul { margin: 26px 0 30px; display: grid; gap: 12px; }
+  .plan li { display: flex; gap: 12px; align-items: flex-start; }
+  .plan li svg { width: 22px; height: 22px; flex: none; margin-top: 2px; color: var(--leaf); }
+  .plan .pill { margin-top: auto; align-self: flex-start; }
+  .plan.family { background: var(--leaf); color: var(--cream); }
+  .plan.family .tag { align-self: flex-start; padding: 7px 12px; border-radius: 99px; background: var(--sun); color: var(--ink); }
+  .plan.family > p { color: var(--cream); }
+  .plan.family li svg { color: var(--sun); }
+  .sticker { position: absolute; top: -22px; right: 26px; width: 112px; height: 112px; display: grid; place-items: center; text-align: center; padding: 14px; border-radius: 50%; background: var(--sun); color: var(--ink); font: 800 14px/1.1 var(--fh); transform: rotate(10deg); box-shadow: 0 10px 20px -12px rgba(30, 27, 58, .5); }
+  .prices { margin-top: clamp(56px, 7vw, 90px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 30px 60px; align-items: start; }
+  .prices h3 { font-size: clamp(28px, 2.8vw, 40px); }
+  .prices .note { margin-top: 14px; color: var(--muted); font-size: 15px; max-width: 34ch; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .tabs button { padding: 11px 18px; border-radius: 99px; border: 1.5px solid var(--ink); background: transparent; font-weight: 700; font-size: 15px; transition: background .35s var(--pop), color .35s var(--pop); }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: var(--cream); }
+  .tabs button:hover { background: var(--paper); }
+  .tabs button[aria-selected="true"]:hover { background: var(--ink); }
+  .no-js-label { font: 700 13px/1 var(--fb); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 18px 0 6px; }
+  .js .no-js-label { display: none; }
+  .tablist-wrap { display: none; }
+  .js .tablist-wrap { display: block; }
+  html:not(.js) .panel[hidden] { display: block; }
+  .panel.shown { animation: lift .6s var(--ease) both; }
+  .rows li { display: flex; align-items: baseline; gap: 12px; padding: 16px 0; border-bottom: 1.5px solid var(--line); font-size: 17px; }
+  .rows li::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--leaf-bright); flex: none; transform: translateY(-2px); }
+  .rows .lead-line { flex: 1; min-width: 12px; border-bottom: 2px dotted rgba(30, 27, 58, .25); transform: translateY(-5px); }
+  .rows b { font: 800 19px/1 var(--fh); white-space: nowrap; }
+  .rows small { color: var(--leaf); font-weight: 700; }
+
+  /* How a visit works: a wheel that turns as you scroll (desktop with JS), a list otherwise. */
+  .visit { position: relative; margin: clamp(90px, 10vw, 140px) 12px 0; border-radius: var(--r-lg); background: var(--ink); color: var(--cream); }
+  .visit-stage { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
+  .visit-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 20px; }
+  .visit-head .eyebrow { margin-bottom: 18px; color: var(--sun); }
+  .visit-head p.lead { color: rgba(255, 248, 234, .82); margin-top: 18px; }
+  .visit-count { font: 800 clamp(22px, 2vw, 28px)/1 var(--fh); color: var(--sun); display: none; }
+  .visit-count span { color: var(--cream); }
+  .steps { margin-top: clamp(40px, 5vw, 64px); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; counter-reset: s; }
+  .step { position: relative; padding: 26px 22px 28px; border-radius: var(--r-md); background: rgba(255, 248, 234, .07); box-shadow: inset 0 0 0 1px rgba(255, 248, 234, .14); }
+  .step-n { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--sun); color: var(--ink); font: 800 17px/1 var(--fh); margin-bottom: 22px; }
+  .step h3 { font-size: 22px; }
+  .step p { margin-top: 10px; font-size: 16px; color: rgba(255, 248, 234, .86); line-height: 1.55; }
+  .wheel { display: none; }
+  .visit.wheel-on { height: 340vh; }
+  .visit.wheel-on .visit-stage { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; padding: 0; border-radius: var(--r-lg); }
+  .visit.wheel-on .visit-head { padding-top: clamp(100px, 13vh, 130px); }
+  .visit.wheel-on .visit-count { display: block; }
+  .visit.wheel-on .wheel { display: block; position: absolute; left: 50%; top: clamp(330px, 42vh, 400px); width: var(--D); height: var(--D); margin-left: calc(var(--D) / -2); --D: min(1060px, 86vw); --step: 40deg; }
+  .wheel-ring { position: absolute; inset: 0; border-radius: 50%; border: 1.5px dashed rgba(255, 248, 234, .3); transform: rotate(var(--rot, 0deg)); }
+  .wheel-dot { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: rotate(calc(var(--i) * var(--step))) translateY(calc(var(--D) / -2)); }
+  .wheel-dot b { position: absolute; left: -23px; top: -23px; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--ink); color: var(--cream); box-shadow: inset 0 0 0 1.5px rgba(255, 248, 234, .5); font: 800 16px/1 var(--fh); transform: rotate(calc(var(--i) * -1 * var(--step) - var(--rot, 0deg))) scale(.82); transition: background .5s var(--pop), color .5s var(--pop), transform .5s var(--pop), box-shadow .5s; }
+  .wheel-dot.on b { background: var(--sun); color: var(--ink); box-shadow: 0 0 0 10px rgba(255, 201, 60, .18); transform: rotate(calc(var(--i) * -1 * var(--step) - var(--rot, 0deg))) scale(1.2); }
+  .wheel-sun { position: absolute; left: 50%; top: 0; width: 2px; height: 70px; margin-left: -1px; background: linear-gradient(var(--sun), transparent); }
+  .visit.wheel-on .steps { display: block; margin: 0; }
+  .visit.wheel-on .step { position: absolute; left: 50%; top: calc(clamp(330px, 42vh, 400px) + 110px); width: min(560px, 46vw); margin-left: calc(min(560px, 46vw) / -2); padding: 0; background: none; box-shadow: none; text-align: center; opacity: 0; transform: translateY(26px); transition: opacity .5s var(--ease), transform .7s var(--ease); pointer-events: none; }
+  .visit.wheel-on .step.on { opacity: 1; transform: none; }
+  .visit.wheel-on .step-n { display: none; }
+  .visit.wheel-on .step h3 { font-size: clamp(32px, 3.2vw, 46px); color: var(--sun); }
+  .visit.wheel-on .step p { font-size: 19px; margin-top: 16px; }
+
+  /* Team */
+  .team { padding: clamp(100px, 11vw, 150px) 0 clamp(80px, 9vw, 120px); }
+  .team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; align-items: start; }
+  .person:nth-child(even) { margin-top: 80px; }
+  .person figure { position: relative; margin: 0; }
+  .person .media { aspect-ratio: 4 / 5; border-radius: var(--r-md); }
+  .person:nth-child(2) .media { background: linear-gradient(140deg, var(--sun-soft), #FFE08A); }
+  .person:nth-child(3) .media { background: linear-gradient(140deg, #FFE1D6, #FFC2AC); }
+  .person:nth-child(4) .media { background: linear-gradient(140deg, #E6E4F4, #CBC6EA); }
+  .person .media img { object-position: 50% 22%; transition: transform 1.2s var(--ease); }
+  .person:hover .media img { transform: scale(1.05); }
+  .person .badge-arrow { position: absolute; top: 14px; right: 14px; }
+  .person:hover .badge-arrow { transform: rotate(45deg); background: var(--sun); }
+  .person h3 { margin-top: 18px; font-size: 22px; }
+  .person .role { margin-top: 6px; font: 700 12px/1.3 var(--fb); letter-spacing: .14em; text-transform: uppercase; color: var(--leaf); }
+  .person p { margin-top: 10px; font-size: 16px; color: var(--muted); line-height: 1.5; }
+
+  /* Practices and numbers */
+  .practices { padding: clamp(40px, 6vw, 80px) 0 clamp(90px, 10vw, 130px); }
+  .prac-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px 64px; align-items: center; }
+  .prac-photo { position: relative; margin: 0; }
+  .prac-photo .media { aspect-ratio: 5 / 4; border-radius: var(--r-lg); }
+  .prac-photo figcaption { position: absolute; left: 22px; bottom: 22px; padding: 10px 16px; border-radius: 99px; background: var(--cream); font-weight: 700; font-size: 15px; }
+  .prac-list { margin-top: 34px; display: grid; gap: 0; }
+  .prac { padding: 24px 0; border-top: 1.5px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 20px; }
+  .prac:last-child { border-bottom: 1.5px solid var(--line); }
+  .prac h3 { font-size: 24px; }
+  .prac address { font-style: normal; color: var(--muted); margin-top: 6px; }
+  .prac .hours { grid-column: 1 / -1; font-size: 15px; display: flex; flex-wrap: wrap; gap: 6px 10px; }
+  .prac .hours span { padding: 5px 11px; border-radius: 99px; background: var(--sprout); font-weight: 600; }
+  .prac .link-arrow { align-self: start; color: var(--leaf); }
+  .stats { margin-top: clamp(64px, 8vw, 110px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .stat { padding: 30px 30px 28px; border-radius: var(--r-md); background: var(--paper); box-shadow: inset 0 0 0 1.5px var(--line); }
+  .stat b { display: block; font: 800 clamp(50px, 5.6vw, 84px)/1 var(--fh); letter-spacing: -.04em; color: var(--leaf); }
+  .stat:nth-child(2) b { color: #D9481C; }
+  .stat:nth-child(3) b { color: var(--ink); }
+  .stat span { display: block; margin-top: 10px; font-weight: 600; }
+
+  /* Reviews marquee */
+  .reviews { padding: clamp(70px, 8vw, 110px) 0; background: var(--sun-soft); margin: 0 12px; border-radius: var(--r-lg); overflow: hidden; }
+  .reviews .sec-head { margin-bottom: 44px; }
+  .score { display: flex; align-items: center; gap: 16px; justify-self: end; }
+  .score b { font: 800 56px/1 var(--fh); letter-spacing: -.03em; }
+  .stars { display: inline-flex; gap: 3px; color: #E5A100; }
+  .stars svg { width: 18px; height: 18px; }
+  .score small { display: block; color: var(--muted); font-size: 14px; margin-top: 4px; }
+  .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+  .track { display: flex; gap: 18px; width: max-content; animation: slide 60s linear infinite; }
+  .marquee:hover .track, .marquee:focus-within .track { animation-play-state: paused; }
+  @keyframes slide { to { transform: translateX(calc(-50% - 9px)); } }
+  .review { width: 360px; flex: none; padding: 28px; border-radius: var(--r-md); background: var(--paper); display: flex; flex-direction: column; gap: 16px; }
+  .review blockquote { margin: 0; font: 600 19px/1.4 var(--fh); letter-spacing: -.01em; }
+  .review footer { margin-top: auto; display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--muted); }
+  .review footer i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sprout); color: var(--leaf); font: 800 15px/1 var(--fh); font-style: normal; }
+  .review:nth-child(3n+2) footer i { background: var(--sun); color: var(--ink); }
+  .review:nth-child(3n) footer i { background: #FFD9CC; color: #9C2E0B; }
+  .review footer b { color: var(--ink); display: block; }
+
+  /* FAQ */
+  .faq { padding: clamp(100px, 11vw, 150px) 0; }
+  .faq-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 40px 80px; align-items: start; }
+  .faq-side { position: sticky; top: 120px; }
+  .faq-side .eyebrow { margin-bottom: 18px; color: var(--leaf); }
+  .faq-side .lead { margin-top: 20px; }
+  .faq-side .link-arrow { margin-top: 26px; color: var(--leaf); }
+  .faq-group + .faq-group { margin-top: 44px; }
+  .faq-group h3 { font-size: 15px; font-family: var(--fb); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  details { border-bottom: 1.5px solid var(--line); }
+  summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; font: 700 clamp(19px, 1.6vw, 23px)/1.3 var(--fh); letter-spacing: -.01em; }
+  summary::-webkit-details-marker { display: none; }
+  summary .pm { position: relative; flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--sprout); transition: background .4s var(--pop), transform .5s var(--pop); }
+  summary .pm::before, summary .pm::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2px; margin: -1px 0 0 -7px; background: var(--ink); border-radius: 2px; transition: transform .5s var(--pop); }
+  summary .pm::after { transform: rotate(90deg); }
+  details[open] summary .pm { background: var(--sun); transform: rotate(180deg); }
+  details[open] summary .pm::after { transform: rotate(0deg); }
+  summary:hover .pm { background: var(--sun); }
+  details > div { padding: 0 60px 24px 0; color: var(--muted); }
+  details[open] > div { animation: lift .5s var(--ease) both; }
+
+  /* Booking */
+  .book { margin: 0 12px; border-radius: var(--r-lg); background: var(--leaf); color: var(--cream); padding: clamp(70px, 9vw, 120px) 0; position: relative; overflow: hidden; isolation: isolate; }
+  .book::before { content: ""; position: absolute; z-index: -1; right: -10%; top: -30%; width: 55%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(60, 196, 107, .55), rgba(60, 196, 107, 0) 68%); }
+  .book-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 50px 70px; align-items: start; }
+  .book-side .eyebrow { margin-bottom: 18px; }
+  .book-side h2 { font-size: clamp(42px, 5.4vw, 80px); }
+  .book-side > p { margin-top: 22px; font-size: 18px; max-width: 40ch; }
+  .contact-list { margin-top: 36px; display: grid; gap: 14px; }
+  .contact-list a, .contact-list div { display: flex; align-items: center; gap: 14px; text-decoration: none; font-weight: 600; }
+  .contact-list i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 248, 234, .14); flex: none; }
+  .contact-list svg { width: 19px; height: 19px; }
+  .contact-list small { display: block; font-weight: 500; opacity: .9; font-size: 14px; }
+  .card { position: relative; background: var(--paper); color: var(--ink); border-radius: 28px; padding: clamp(24px, 3.2vw, 44px); box-shadow: 0 40px 80px -40px rgba(5, 40, 20, .6); }
+  .card h3 { font-size: clamp(26px, 2.4vw, 34px); }
+  .card .sub { margin-top: 8px; color: var(--muted); font-size: 15px; }
+  .form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 16px; margin-top: 26px; }
+  .field { display: grid; gap: 7px; }
+  .field.full, .form fieldset, .form .full { grid-column: 1 / -1; }
+  .field label, .form legend { font-weight: 700; font-size: 15px; }
+  .field label span, .form legend span { font-weight: 500; color: var(--muted); }
+  .field input, .field select, .field textarea { width: 100%; min-height: 54px; padding: 14px 16px; border-radius: 14px; border: 1.5px solid rgba(30, 27, 58, .5); background: #FFFCF5; color: var(--ink); font: 500 16px/1.4 var(--fb); transition: border-color .3s, box-shadow .3s; }
+  .field select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231E1B3A' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 20px; padding-right: 44px; }
+  .field textarea { min-height: 110px; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--leaf); box-shadow: 0 0 0 4px rgba(255, 201, 60, .55); }
+  .hint { font-size: 14px; color: var(--muted); display: flex; gap: 8px; align-items: flex-start; }
+  .hint svg { width: 17px; height: 17px; flex: none; margin-top: 2px; color: var(--leaf); }
+  .form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .form legend { padding: 0; margin-bottom: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips label { position: relative; }
+  .chips input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .chips span { display: inline-block; padding: 10px 16px; border-radius: 99px; border: 1.5px solid rgba(30, 27, 58, .5); font-weight: 600; font-size: 15px; cursor: pointer; transition: background .3s var(--pop), border-color .3s, color .3s; }
+  .chips label:hover span { border-color: var(--ink); }
+  .chips input:checked + span { background: var(--leaf); border-color: var(--leaf); color: var(--cream); }
+  .chips input:focus-visible + span { outline: 3px solid var(--sun); outline-offset: 2px; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 6px; }
+  .send .pill { font-size: 17px; }
+  .send .pill[disabled] { opacity: .6; cursor: progress; transform: none; }
+  .credit { font-size: 14px; color: var(--muted); }
+  .credit a { color: var(--leaf); font-weight: 700; }
+  .status { grid-column: 1 / -1; font-weight: 600; min-height: 0; }
+  .status:empty { display: none; }
+  .status.err { color: #B3261E; background: #FDECEA; padding: 12px 16px; border-radius: 12px; }
+  .thanks { display: none; grid-column: 1 / -1; text-align: center; padding: 36px 10px 20px; }
+  .thanks .sunmark { width: 86px; height: 86px; margin: 0 auto 20px; border-radius: 50%; background: var(--sun); display: grid; place-items: center; }
+  .thanks .sunmark svg { width: 40px; height: 40px; }
+  .thanks strong { display: block; font: 800 clamp(26px, 2.6vw, 34px)/1.1 var(--fh); letter-spacing: -.02em; }
+  .thanks p { margin: 12px auto 22px; max-width: 38ch; color: var(--muted); }
+  .thanks button { border: 1.5px solid var(--ink); background: transparent; border-radius: 99px; padding: 12px 20px; font-weight: 700; }
+  .thanks button:hover { background: var(--sun); }
+  .form.is-sent > :not(.thanks) { display: none; }
+  .form.is-sent .thanks { display: block; animation: pop .7s var(--pop) both; }
+
+  /* Footer with a giant wordmark */
+  .site-foot { margin: 12px; border-radius: var(--r-lg); background: var(--ink); color: var(--cream); padding: clamp(64px, 8vw, 100px) 0 0; overflow: hidden; }
+  .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 36px 40px; }
+  .site-foot h3 { font: 700 13px/1 var(--fb); letter-spacing: .16em; text-transform: uppercase; color: var(--sun); margin-bottom: 16px; }
+  .site-foot li + li { margin-top: 8px; }
+  .site-foot a { text-decoration: none; }
+  .site-foot a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .site-foot address { font-style: normal; }
+  .foot-about p { margin-top: 16px; max-width: 32ch; color: rgba(255, 248, 234, .82); }
+  .foot-about .logo { color: var(--cream); }
+  .social { display: flex; gap: 10px; margin-top: 22px; }
+  .social a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 248, 234, .1); transition: background .3s, color .3s; }
+  .social a:hover { background: var(--sun); color: var(--ink); }
+  .social svg { width: 19px; height: 19px; }
+  .giant { margin-top: clamp(50px, 7vw, 90px); display: flex; justify-content: space-between; font: 800 clamp(64px, 16.6vw, 250px)/.96 var(--fh); letter-spacing: -.04em; color: var(--leaf-bright); padding: 0 var(--pad); overflow: hidden; }
+  .giant span { display: inline-block; }
+  .js .giant span { transform: translateY(100%); transition: transform 1s var(--ease); transition-delay: calc(var(--i) * 45ms); }
+  .js .giant.in span { transform: none; }
+  .foot-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; padding: 22px var(--pad) 26px; font-size: 14px; color: rgba(255, 248, 234, .78); border-top: 1px solid rgba(255, 248, 234, .14); }
+
+  /* Responsive */
+  @media (max-width: 1240px) {
+    .head-tel { display: none; }
+    .hero h1 { font-size: clamp(44px, 5.1vw, 92px); }
+    .nav a { padding: 10px 11px; }
+  }
+  @media (max-width: 1180px) and (min-width: 961px) {
+    .hero-frame { top: 50%; left: 10%; width: 52%; }
+  }
+  @media (max-width: 1080px) {
+    .svc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .person:nth-child(even) { margin-top: 60px; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .faq-grid, .prices { grid-template-columns: 1fr; }
+    .faq-side { position: static; }
+  }
+  @media (max-width: 960px) {
+    .menu-btn { display: grid; }
+    .bar > .pill { display: none; }
+    .nav { position: fixed; inset: 0; z-index: -1; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; padding: 100px var(--pad) 40px; background: var(--cream); color: var(--ink); opacity: 0; visibility: hidden; transform: translateY(-14px); transition: opacity .4s var(--ease), transform .5s var(--ease), visibility 0s .5s; }
+    .nav a { font: 800 clamp(32px, 9vw, 46px)/1.1 var(--fh); letter-spacing: -.02em; padding: 8px 0; }
+    .nav a:hover { letter-spacing: 0; color: var(--leaf); }
+    .nav .dot { display: none; }
+    .nav .menu-cta { margin-top: 24px; font: 700 17px/1 var(--fb); padding: 18px 26px; background: var(--sun); border-radius: 99px; letter-spacing: 0; }
+    .site-head.open .nav { opacity: 1; visibility: visible; transform: none; transition: opacity .4s var(--ease), transform .5s var(--ease); }
+    .hero { grid-template-columns: 1fr; min-height: 0; }
+    .hero-copy { padding: 112px var(--pad) 0; }
+    .hero-copy > p:not(.eyebrow) { max-width: 46ch; }
+    .hero h1 { max-width: 11ch; }
+    .hero-cta { margin-top: 0; }
+    .hero-media { margin: 36px 12px 12px; min-height: 0; aspect-ratio: 1 / .92; }
+    .hero-photo { width: 66%; }
+    .hero-frame { top: auto; bottom: 7%; width: 60%; }
+    .hero-sun { left: 20%; top: 4%; width: 120px; height: 120px; }
+    .badge { width: 104px; height: 104px; left: auto; right: 0; transform: translate(38%, -46%); }
+    .scroll-hint { display: none; }
+    .sec-head, .urgent .wrap, .prac-grid, .book-grid, .plan-grid { grid-template-columns: 1fr; }
+    .score { justify-self: start; }
+    .stats { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  @media (min-width: 961px) {
+    .nav .menu-cta { display: none; }
+  }
+  @media (max-width: 960px) and (min-width: 0px) {
+    html:not(.js) .menu-btn { display: none; }
+    html:not(.js) .nav { position: static; opacity: 1; visibility: visible; transform: none; flex-direction: row; flex-wrap: wrap; padding: 0; background: none; color: inherit; z-index: 0; }
+    html:not(.js) .nav a { font: 600 15px/1 var(--fb); padding: 8px; }
+    html:not(.js) .bar { flex-wrap: wrap; border-radius: 24px; }
+  }
+  @media (min-width: 1181px) {
+    .floats { display: block; margin: 0; padding: 0; }
+    .statement { min-height: 118vh; padding-bottom: 0; }
+    .statement-text { position: sticky; top: 22vh; padding-bottom: 20vh; }
+    .float { position: absolute; z-index: 1; max-width: none; }
+    .f1 { left: 4%; top: 6%; width: 17%; }
+    .f2 { right: 5%; top: 30%; width: 15%; }
+    .f3 { left: 7%; bottom: 4%; width: 18%; }
+  }
+  @media (max-width: 720px) {
+    body { font-size: 16px; }
+    .site-head { padding: 12px 12px 0; }
+    .bar { padding: 8px 8px 8px 16px; }
+    .logo b { font-size: 21px; }
+    .eyebrow { font-size: 12px; letter-spacing: .12em; }
+    .hero-copy { padding-top: 100px; }
+    .hero-copy .eyebrow { margin-bottom: 20px; letter-spacing: .08em; }
+    .hero { margin: 8px; }
+    .hero-media { margin: 30px 8px 8px; }
+    .svc-grid, .steps { grid-template-columns: 1fr; }
+    .svc { min-height: 0; }
+    .svc.big { grid-column: auto; min-height: 400px; }
+    .floats { gap: 10px; }
+    .urgent, .plans, .visit, .reviews, .book { margin-left: 8px; margin-right: 8px; }
+    .stats { grid-template-columns: 1fr; }
+    .form { grid-template-columns: 1fr; }
+    .team-grid { gap: 14px; }
+    .person h3 { font-size: 19px; }
+    .person p { display: none; }
+    .person .badge-arrow { width: 38px; height: 38px; top: 10px; right: 10px; }
+    .sticker { width: 96px; height: 96px; font-size: 12.5px; top: -30px; right: 16px; }
+    .plan { padding-top: 40px; }
+    .review { width: 290px; }
+    .foot-grid { grid-template-columns: 1fr; }
+    details > div { padding-right: 0; }
+    .site-foot { margin: 8px; }
+    .rows li { font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .js .intro { display: none; }
+    .js [data-reveal], .js [data-reveal="clip"], .js [data-reveal] img, .js .giant span { opacity: 1; transform: none; clip-path: none; }
+    .js .statement h2 .w { opacity: 1; }
+    .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro-in">
+    <div class="intro-mark"><span class="sun-disc"></span>
+      <svg viewBox="0 0 40 44"><use href="#mark"/></svg>
+    </div>
+    <div class="intro-word"><span>Brightmoss</span></div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="mark">
+      <path d="M9 17c0-6 4.5-9 9-8 1 .2 1.6.6 2 .6s1-.4 2-.6c4.5-1 9 2 9 8 0 5-2.4 7.6-3.2 12.6-.8 5-2 9.4-4.3 9.4-2.1 0-2.2-7.2-3.5-7.2s-1.4 7.2-3.5 7.2c-2.3 0-3.5-4.4-4.3-9.4C11.4 24.6 9 22 9 17z" fill="#FFC93C" stroke="#1E1B3A" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M15.6 19.4c2.6 2.6 6.2 2.6 8.8 0" fill="none" stroke="#1E1B3A" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M20 9.4V5.6" stroke="#1E1B3A" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M20 6.4C18.8 3.4 16 2.2 13.2 2.8c.8 2.8 3.4 4.4 6.8 3.6zM20 5.4c1-3 3.8-4.6 6.8-4-.6 3-3.4 4.8-6.8 4z" fill="#3CC46B" stroke="#1E1B3A" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-diag" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.6 4.2-2 1.4a11 11 0 0 0 6.1 6.1l1.4-2 4.2 1.6v2.6a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".18"/><path d="m7.5 12.4 3 3 6-6.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z" fill="currentColor"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 11v5.5M12 7.6v.1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-head" id="top">
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="Brightmoss Dental, back to top">
+      <svg viewBox="0 0 40 44" aria-hidden="true"><use href="#mark"/></svg>
+      <span><b>Brightmoss</b><small>Family dental</small></span>
+    </a>
+    <nav class="nav" id="menu" aria-label="Main">
+      <span class="dot" aria-hidden="true"></span>
+      <a href="#treatments">Treatments</a>
+      <a href="#plans">Plans &amp; prices</a>
+      <a href="#visit">Your visit</a>
+      <a href="#team">Team</a>
+      <a href="#practices">Practices</a>
+      <a href="#faq">FAQ</a>
+      <a class="menu-cta" href="#book">Book an appointment</a>
+    </nav>
+    <a class="head-tel" href="tel:+441632960214"><svg aria-hidden="true"><use href="#i-phone"/></svg>01632 960 214</a>
+    <a class="pill" href="#book">Book a visit<span class="arr"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr">Menu</b></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero-copy">
+      <p class="eyebrow">Family dentist in Tansy Cross</p>
+      <h1 id="hero-h">Gentle dentistry for the <em>whole family</em></h1>
+      <p>Check-ups, children's dentistry and same-day emergency appointments at two practices in Tansy Cross. We explain everything first, and we never rush little ones.</p>
+      <div class="hero-cta">
+        <a class="pill" href="#book">Book an appointment<span class="arr"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="hero-tel" href="tel:+441632960214"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Toothache today?<b>01632 960 214</b></span></a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <span class="hero-sun" aria-hidden="true"></span>
+      <figure class="hero-photo media"><img src="img/hero.webp" alt="Sunlit reception of a family dental practice with leafy plants by a tall window" width="1024" height="1536" fetchpriority="high"></figure>
+      <figure class="hero-frame">
+        <div class="media"><img src="img/hero-frame.webp" alt="A girl laughing in the dental chair while her dentist shows her how to brush on a large tooth model" width="1600" height="1067"></div>
+        <span class="badge" aria-hidden="true">
+          <svg class="ring" viewBox="0 0 120 120"><defs><path id="badge-c" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs><text fill="currentColor" font-family="Figtree, sans-serif" font-size="10.2" font-weight="700"><textPath href="#badge-c" textLength="280" lengthAdjust="spacing">KIDS WELCOME · FROM THE FIRST TOOTH · </textPath></text></svg>
+          <svg class="tooth" viewBox="0 0 40 44"><use href="#mark"/></svg>
+        </span>
+      </figure>
+    </div>
+    <a class="scroll-hint" href="#about"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Scroll to discover</a>
+  </section>
+
+  <section class="statement" id="about" aria-labelledby="about-h">
+    <div class="statement-text">
+      <p class="eyebrow">Why families choose us</p>
+      <h2 id="about-h" data-fill>We want the dentist to feel like a normal Tuesday: a chat, a look, a sticker, and home in time for tea.</h2>
+      <p>Brightmoss has looked after families in Tansy Cross since 2009. Two practices, fourteen people, and the same promise at both: we explain before we do anything, and nobody gets rushed.</p>
+    </div>
+    <div class="floats">
+      <figure class="float f1" data-speed="0.18"><div class="media" data-reveal="clip"><img src="img/float-family.webp" alt="A father reading a picture book to his toddler on a bench in the waiting area" width="1024" height="1536" loading="lazy"></div></figure>
+      <figure class="float f2" data-speed="-0.12"><div class="media" data-reveal="clip"><img src="img/float-brushes.webp" alt="Colourful children's toothbrushes in a ceramic cup on a sunny windowsill next to a small plant" width="1254" height="1254" loading="lazy"></div></figure>
+      <figure class="float f3" data-speed="0.3"><div class="media" data-reveal="clip"><img src="img/float-teen.webp" alt="A hygienist talking with a smiling teenage patient who holds a hand mirror" width="1600" height="1067" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <section class="services" id="treatments" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div data-reveal><p class="eyebrow">Treatments</p><h2 id="svc-h">Everything a family needs, under one roof</h2></div>
+        <p class="lead" data-reveal style="--d:.1s">From a toddler's first look to a grandparent's crown. Tap a treatment to start a booking request for it.</p>
+      </div>
+      <div class="svc-grid">
+        <a class="svc big" href="#book" data-service="Check-up" data-reveal>
+          <div class="media"><img src="img/room.webp" alt="A bright treatment room with a pale green dental chair, a plant and a window onto a garden" width="1600" height="1067" loading="lazy"></div>
+          <div class="svc-top"><span class="svc-num">01</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <div class="svc-body"><h3>Family check-ups</h3><p>A proper look at every tooth, your gums and your bite, with photos on screen so you see what we see.</p><span class="svc-price">from £48</span></div>
+        </a>
+        <a class="svc sun" href="#book" data-service="Children's check-up" data-reveal style="--d:.08s">
+          <div class="svc-top"><span class="svc-num">02</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="26" r="16"/><path d="M17 30c4 4 10 4 14 0"/><circle cx="18.5" cy="22" r="1.6" fill="currentColor"/><circle cx="29.5" cy="22" r="1.6" fill="currentColor"/><path d="M24 10V5m-6 6-3-4m15 4 3-4"/></svg>
+          <div class="svc-body"><h3>Children's dentistry</h3><p>Short, playful visits. Kids count teeth with us, ride the chair up and down, and pick a sticker.</p><span class="svc-price">free on the Family Plan</span></div>
+        </a>
+        <a class="svc sprout" href="#book" data-service="Hygiene visit" data-reveal style="--d:.16s">
+          <div class="svc-top"><span class="svc-num">03</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c6 8 11 14 11 21a11 11 0 0 1-22 0c0-7 5-13 11-21z"/><path d="M19 29a5 5 0 0 0 5 5"/><path d="M38 8v6m-3-3h6"/></svg>
+          <div class="svc-body"><h3>Hygiene visits</h3><p>A deep clean and polish with our hygienists, plus easy brushing tips you'll actually use at home.</p><span class="svc-price">from £62</span></div>
+        </a>
+        <a class="svc coral" href="#book" data-service="Emergency" data-reveal>
+          <div class="svc-top"><span class="svc-num">04</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="26" r="16"/><path d="M24 17v9l6 4"/><path d="M19 5h10M24 5v5"/></svg>
+          <div class="svc-body"><h3>Emergency appointments</h3><p>Same-day slots every weekday morning for pain, swelling or a broken tooth.</p><span class="svc-price">from £75</span></div>
+        </a>
+        <a class="svc paper" href="#book" data-service="Clear aligners" data-reveal style="--d:.08s">
+          <div class="svc-top"><span class="svc-num">05</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 18c0 12 7 20 16 20s16-8 16-20"/><path d="M14 18c0 8 4 14 10 14s10-6 10-14"/><path d="M8 18h6m20 0h6"/></svg>
+          <div class="svc-body"><h3>Clear aligners</h3><p>Nearly invisible trays that straighten teeth a little at a time, for teens and adults.</p><span class="svc-price">from £2,400</span></div>
+        </a>
+        <a class="svc leaf" href="#book" data-service="Whitening" data-reveal style="--d:.16s">
+          <div class="svc-top"><span class="svc-num">06</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 8c1 8 4 11 12 12-8 1-11 4-12 12-1-8-4-11-12-12 8-1 11-4 12-12z"/><path d="M37 30c.5 3.5 2 5 5.5 5.5-3.5.5-5 2-5.5 5.5-.5-3.5-2-5-5.5-5.5 3.5-.5 5-2 5.5-5.5z"/></svg>
+          <div class="svc-body"><h3>Whitening</h3><p>Gentle home whitening with trays made for you, after a check that your teeth are healthy.</p><span class="svc-price">£295</span></div>
+        </a>
+        <a class="svc ask" href="#book" data-service="Something else" data-reveal style="--d:.24s">
+          <div class="svc-top"><span class="svc-num">?</span><span class="badge-arrow"><svg aria-hidden="true"><use href="#i-diag"/></svg></span></div>
+          <div class="svc-body"><h3>Not sure what you need?</h3><p>Tell us what's going on and we'll suggest the right first visit.</p><span class="svc-price">Ask us</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgent" aria-labelledby="urgent-h">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Emergency care</p>
+        <h2 id="urgent-h" style="margin-top:18px">Toothache, a chipped tooth or a swollen face?</h2>
+        <p>We keep same-day slots every weekday from 8:00. Call and we'll fit you in, even if you're not registered with us yet.</p>
+      </div>
+      <div class="urgent-call" data-reveal style="--d:.12s">
+        <small>Mon–Fri from 8:00 · Sat from 9:00</small>
+        <a class="pill ink call" href="tel:+441632960214">Call 01632 960 214<span class="arr"><svg aria-hidden="true"><use href="#i-phone"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans" id="plans" aria-labelledby="plans-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div data-reveal><p class="eyebrow">Plans &amp; prices</p><h2 id="plans-h">Pay as you go, or spread it out</h2></div>
+        <p class="lead" data-reveal style="--d:.1s">Two simple ways to pay at both practices. Every price is on this page, and you get a written quote before any treatment.</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan" data-reveal>
+          <p class="tag">For occasional visits</p>
+          <h3>Pay as you go</h3>
+          <p class="price">£48<small>per check-up</small></p>
+          <p>Pay for each visit on the day. Good if you only come in once or twice a year.</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>No monthly payments, no sign-up</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Children's check-ups £30</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Card, cash or phone payment</li>
+          </ul>
+          <a class="pill ink" href="#book" data-service="Check-up">Book a check-up<span class="arr"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </article>
+        <article class="plan family" data-reveal style="--d:.12s">
+          <span class="sticker" aria-hidden="true">Most families pick this</span>
+          <p class="tag">Brightmoss Family Plan</p>
+          <h3>One monthly payment</h3>
+          <p class="price">£14.50<small>a month per adult</small></p>
+          <p>Children under 18 join free with a paying adult. No joining fee, cancel any time.</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Two check-ups and two hygiene visits a year</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>10% off all other treatment</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>A guaranteed same-day emergency slot</li>
+          </ul>
+          <a class="pill" href="#book" data-service="Family Plan">Join the Family Plan<span class="arr"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </article>
+      </div>
+
+      <div class="prices" data-reveal>
+        <div>
+          <h3>Price list</h3>
+          <p class="note">Sample prices for this template. Your exact cost is in the written plan you get after your check-up.</p>
+        </div>
+        <div>
+          <div class="tablist-wrap"><div class="tabs" role="tablist" aria-label="Price list">
+            <button type="button" role="tab" id="t-1" aria-controls="p-1" aria-selected="true">Check-ups</button>
+            <button type="button" role="tab" id="t-2" aria-controls="p-2" aria-selected="false" tabindex="-1">Children</button>
+            <button type="button" role="tab" id="t-3" aria-controls="p-3" aria-selected="false" tabindex="-1">Cosmetic</button>
+            <button type="button" role="tab" id="t-4" aria-controls="p-4" aria-selected="false" tabindex="-1">Urgent care</button>
+          </div></div>
+          <div class="panel" id="p-1" role="tabpanel" aria-labelledby="t-1">
+            <p class="no-js-label">Check-ups</p>
+            <ul class="rows">
+              <li>New patient check-up<span class="lead-line"></span><b>£65</b></li>
+              <li>Routine check-up<span class="lead-line"></span><b>£48</b></li>
+              <li>Small X-rays, pair<span class="lead-line"></span><b>£28</b></li>
+              <li>Hygiene visit, 30 minutes<span class="lead-line"></span><b>£62</b></li>
+              <li>Hygiene visit, 45 minutes<span class="lead-line"></span><b>£82</b></li>
+            </ul>
+          </div>
+          <div class="panel" id="p-2" role="tabpanel" aria-labelledby="t-2" hidden>
+            <p class="no-js-label">Children</p>
+            <ul class="rows">
+              <li>First visit, under 3s<span class="lead-line"></span><b>Free</b></li>
+              <li>Children's check-up<span class="lead-line"></span><b>£30</b></li>
+              <li>Fluoride varnish<span class="lead-line"></span><b>£15</b></li>
+              <li>Fissure sealant, per tooth<span class="lead-line"></span><b>£25</b></li>
+              <li>Milk tooth filling<span class="lead-line"></span><b>from £60</b></li>
+            </ul>
+          </div>
+          <div class="panel" id="p-3" role="tabpanel" aria-labelledby="t-3" hidden>
+            <p class="no-js-label">Cosmetic</p>
+            <ul class="rows">
+              <li>Home whitening<span class="lead-line"></span><b>£295</b></li>
+              <li>Clear aligners, consultation<span class="lead-line"></span><b>£45</b></li>
+              <li>Clear aligners, full treatment<span class="lead-line"></span><b>from £2,400</b></li>
+              <li>Tooth-coloured filling<span class="lead-line"></span><b>from £120</b></li>
+              <li>Composite bonding, per tooth<span class="lead-line"></span><b>from £180</b></li>
+            </ul>
+          </div>
+          <div class="panel" id="p-4" role="tabpanel" aria-labelledby="t-4" hidden>
+            <p class="no-js-label">Urgent care</p>
+            <ul class="rows">
+              <li>Emergency appointment<span class="lead-line"></span><b>£75</b></li>
+              <li>Temporary filling<span class="lead-line"></span><b>from £45</b></li>
+              <li>Extraction<span class="lead-line"></span><b>from £120</b></li>
+              <li>Phone advice after hours<span class="lead-line"></span><b>Free</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="visit-stage">
+      <div class="wrap visit-head">
+        <div>
+          <p class="eyebrow">Your visit</p>
+          <h2 id="visit-h">How a first visit works</h2>
+          <p class="lead">Five small steps, the same for a three-year-old and a seventy-three-year-old.</p>
+        </div>
+        <p class="visit-count" aria-hidden="true"><span data-now>01</span> / 05</p>
+      </div>
+      <div class="wheel" aria-hidden="true">
+        <span class="wheel-sun"></span>
+        <div class="wheel-ring">
+          <span class="wheel-dot" style="--i:0"><b>1</b></span>
+          <span class="wheel-dot" style="--i:1"><b>2</b></span>
+          <span class="wheel-dot" style="--i:2"><b>3</b></span>
+          <span class="wheel-dot" style="--i:3"><b>4</b></span>
+          <span class="wheel-dot" style="--i:4"><b>5</b></span>
+        </div>
+      </div>
+      <ol class="wrap steps">
+        <li class="step" data-reveal><span class="step-n">01</span><h3>Say hello</h3><p>Send a request, call, or pop in. Tell us who's coming and when suits you, and we'll confirm within a day.</p></li>
+        <li class="step" data-reveal style="--d:.06s"><span class="step-n">02</span><h3>Meet the room</h3><p>Kids sit in the chair, press the buttons and meet the mirror before anything happens. Grown-ups get a cup of tea.</p></li>
+        <li class="step" data-reveal style="--d:.12s"><span class="step-n">03</span><h3>A calm look</h3><p>We check teeth, gums and bite, and show you photos on screen as we go. You can ask us to stop at any time.</p></li>
+        <li class="step" data-reveal style="--d:.18s"><span class="step-n">04</span><h3>A plan with prices</h3><p>If anything needs doing, you get a written plan with the cost up front. No surprises, no pressure.</p></li>
+        <li class="step" data-reveal style="--d:.24s"><span class="step-n">05</span><h3>See you soon</h3><p>We text a reminder before your next check-up, usually in six months. Kids get theirs on a postcard.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="team" id="team" aria-labelledby="team-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div data-reveal><p class="eyebrow">Team</p><h2 id="team-h">The people behind the chair</h2></div>
+        <p class="lead" data-reveal style="--d:.1s">Dentists, hygienists and a front desk who remember your children's names. Most of us have been here for over ten years.</p>
+      </div>
+      <div class="team-grid">
+        <article class="person" data-reveal>
+          <figure><div class="media"><img src="img/team-ada.webp" alt="Portrait of Dr Ada Okonkwo-Hale, principal dentist, smiling with her arms loosely folded" width="800" height="1200" loading="lazy"></div><span class="badge-arrow" aria-hidden="true"><svg><use href="#i-diag"/></svg></span></figure>
+          <h3>Dr Ada Okonkwo-Hale</h3><p class="role">Principal dentist</p><p>Opened Brightmoss in 2009. Has a soft spot for nervous patients and a good biscuit.</p>
+        </article>
+        <article class="person" data-reveal style="--d:.08s">
+          <figure><div class="media"><img src="img/team-ravi.webp" alt="Portrait of Dr Ravi Menon, children's dentist, laughing and holding a small toy dinosaur" width="800" height="1200" loading="lazy"></div><span class="badge-arrow" aria-hidden="true"><svg><use href="#i-diag"/></svg></span></figure>
+          <h3>Dr Ravi Menon</h3><p class="role">Children's dentist</p><p>Sees most of our under-tens and can name every dinosaur they bring along.</p>
+        </article>
+        <article class="person" data-reveal style="--d:.16s">
+          <figure><div class="media"><img src="img/team-maisie.webp" alt="Portrait of Maisie Carrow, dental hygienist, smiling, with red hair tied back" width="800" height="1200" loading="lazy"></div><span class="badge-arrow" aria-hidden="true"><svg><use href="#i-diag"/></svg></span></figure>
+          <h3>Maisie Carrow</h3><p class="role">Dental hygienist</p><p>Runs the hygiene room at Orchard Row and the after-school brushing club.</p>
+        </article>
+        <article class="person" data-reveal style="--d:.24s">
+          <figure><div class="media"><img src="img/team-tom.webp" alt="Portrait of Dr Tomasz Wilk, dentist for clear aligners and whitening, with a grey beard" width="800" height="1200" loading="lazy"></div><span class="badge-arrow" aria-hidden="true"><svg><use href="#i-diag"/></svg></span></figure>
+          <h3>Dr Tomasz Wilk</h3><p class="role">Aligners &amp; whitening</p><p>Has been straightening smiles for twenty-five years, one tray at a time.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="practices" id="practices" aria-labelledby="prac-h">
+    <div class="wrap">
+      <div class="prac-grid">
+        <figure class="prac-photo"><div class="media" data-reveal="clip"><img src="img/practice.webp" alt="The front of a small high-street dental practice with a yellow door and window boxes of herbs" width="1600" height="1067" loading="lazy"></div><figcaption>Orchard Row: look for the yellow door</figcaption></figure>
+        <div data-reveal style="--d:.1s">
+          <p class="eyebrow" style="color:var(--leaf);margin-bottom:18px">Practices</p>
+          <h2 id="prac-h">Two practices in Tansy Cross</h2>
+          <p class="lead" style="margin-top:20px">Book at either one. Your notes and your plan work at both, so you can pick whichever is closer to school or work.</p>
+          <div class="prac-list">
+            <div class="prac">
+              <div><h3>Orchard Row</h3><address>14 Orchard Row, Tansy Cross TX4 2LB</address></div>
+              <a class="link-arrow" href="#book" data-practice="Orchard Row">Book here<i></i></a>
+              <p class="hours"><span>Mon–Fri 8:00–18:30</span><span>Sat 9:00–13:00</span><span>Step-free, parking behind</span></p>
+            </div>
+            <div class="prac">
+              <div><h3>Wetherell Quay</h3><address>3 Wetherell Quay, Tansy Cross TX4 7QA</address></div>
+              <a class="link-arrow" href="#book" data-practice="Wetherell Quay">Book here<i></i></a>
+              <p class="hours"><span>Mon–Thu 8:30–19:30</span><span>Fri 8:30–17:00</span><span>Ground floor, by the bus stop</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat" data-reveal><b data-count="6800" data-suffix="+">6,800+</b><span>families on our books</span></div>
+        <div class="stat" data-reveal style="--d:.08s"><b data-count="16">16</b><span>years in Tansy Cross</span></div>
+        <div class="stat" data-reveal style="--d:.16s"><b data-count="6" data-suffix=" days">6 days</b><span>a week, with late evenings at the Quay</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div data-reveal><p class="eyebrow" style="color:var(--ink)">Sample reviews</p><h2 id="rev-h" style="margin-top:18px">What families tell us</h2></div>
+        <div class="score" data-reveal style="--d:.1s"><b>4.9</b><div><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><small>out of 5, from 640 reviews (sample)</small></div></div>
+      </div>
+    </div>
+    <div class="marquee">
+      <ul class="track">
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"My son used to cry in the car park. Now he asks when his next tooth count is."</blockquote><footer><i aria-hidden="true">HP</i><span><b>Hannah P.</b>mum of two</span></footer></li>
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"Cracked a molar on Saturday, rang at eight on Monday, was seen by half nine."</blockquote><footer><i aria-hidden="true">GT</i><span><b>Graham T.</b>emergency visit</span></footer></li>
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"They showed me the photos and explained the options without any sales talk."</blockquote><footer><i aria-hidden="true">PS</i><span><b>Priya S.</b>Family Plan member</span></footer></li>
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"Maisie is the first hygienist who didn't make me feel told off."</blockquote><footer><i aria-hidden="true">JR</i><span><b>Joe R.</b>hygiene visits</span></footer></li>
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"We all go on the same afternoon. Three check-ups in forty minutes, and nobody cried."</blockquote><footer><i aria-hidden="true">AF</i><span><b>The Adebayo family</b>Wetherell Quay</span></footer></li>
+        <li class="review"><span class="stars" aria-label="5 out of 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span><blockquote>"Aligners took eleven months. Tom checked in every six weeks and it never felt rushed."</blockquote><footer><i aria-hidden="true">LK</i><span><b>Laura K.</b>clear aligners</span></footer></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="faq-side" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-h">Questions parents ask us</h2>
+        <p class="lead">Can't find yours? Ask it in the booking form, or call the front desk.</p>
+        <a class="link-arrow" href="#book">Ask a question<i></i></a>
+      </div>
+      <div data-reveal style="--d:.1s">
+        <div class="faq-group">
+          <h3>Visits and children</h3>
+          <details><summary>When should my child first see a dentist?<span class="pm" aria-hidden="true"></span></summary><div><p>When the first tooth appears, or by their first birthday. Early visits are short and mostly about getting used to us, and they're free for under-3s.</p></div></details>
+          <details><summary>Can I stay with my child during the visit?<span class="pm" aria-hidden="true"></span></summary><div><p>Always. You can sit right beside the chair, and brothers and sisters are welcome in the room too.</p></div></details>
+          <details><summary>I'm nervous about the dentist. What can you do?<span class="pm" aria-hidden="true"></span></summary><div><p>Tell us when you book. We'll give you a longer slot, explain each step before we do it, and agree a hand signal that means stop.</p></div></details>
+          <details><summary>Do you see people who aren't registered?<span class="pm" aria-hidden="true"></span></summary><div><p>Yes, for emergencies. Call from 8:00 on a weekday and we'll find you a same-day slot at either practice.</p></div></details>
+        </div>
+        <div class="faq-group">
+          <h3>Plans and payment</h3>
+          <details><summary>How does the Family Plan work?<span class="pm" aria-hidden="true"></span></summary><div><p>You pay a fixed amount each month by direct debit. It covers two check-ups and two hygiene visits a year for each adult, and children under 18 join free.</p></div></details>
+          <details><summary>Can I spread the cost of clear aligners?<span class="pm" aria-hidden="true"></span></summary><div><p>Yes, over twelve months with no interest. We'll go through the numbers at your consultation, with nothing to sign on the day.</p></div></details>
+          <details><summary>What if I need to cancel?<span class="pm" aria-hidden="true"></span></summary><div><p>Let us know 24 hours before, by phone or email, so we can offer the slot to someone else. There's no charge for that.</p></div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-h">
+    <div class="wrap book-grid">
+      <div class="book-side" data-reveal>
+        <p class="eyebrow">Appointments</p>
+        <h2 id="book-h">Book a visit</h2>
+        <p>Send a request and we'll call or email within one working day to find a time. For pain or swelling today, please call us instead.</p>
+        <div class="contact-list">
+          <a href="tel:+441632960214"><i><svg aria-hidden="true"><use href="#i-phone"/></svg></i><span>01632 960 214<small>Front desk, both practices</small></span></a>
+          <a href="mailto:hello@brightmoss.example"><i><svg aria-hidden="true"><use href="#i-mail"/></svg></i><span>hello@brightmoss.example<small>We reply within a working day</small></span></a>
+          <div><i><svg aria-hidden="true"><use href="#i-clock"/></svg></i><span>Mon–Fri 8:00–18:30, Sat 9:00–13:00<small>Late evenings Mon–Thu at Wetherell Quay</small></span></div>
+        </div>
+      </div>
+      <div class="card" data-reveal style="--d:.12s">
+        <h3>Tell us who's coming</h3>
+        <p class="sub">Fields marked * are needed so we can reply.</p>
+        <!-- Formgong form. Replace fk_your_access_key with the access key from your Formgong dashboard. -->
+        <form class="form" id="f-contact" action="https://formgong.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="fk_your_access_key">
+          <input type="hidden" name="subject" value="New appointment request from the website">
+          <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+          <div class="field full"><label for="c-name">Your name *</label><input id="c-name" name="name" autocomplete="name" required maxlength="100"></div>
+          <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+          <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></div>
+          <fieldset>
+            <legend>What would you like to book?</legend>
+            <div class="chips">
+              <label><input type="radio" name="service" value="Check-up" checked><span>Check-up</span></label>
+              <label><input type="radio" name="service" value="Children's check-up"><span>Children's check-up</span></label>
+              <label><input type="radio" name="service" value="Hygiene visit"><span>Hygiene visit</span></label>
+              <label><input type="radio" name="service" value="Emergency"><span>Emergency</span></label>
+              <label><input type="radio" name="service" value="Clear aligners"><span>Clear aligners</span></label>
+              <label><input type="radio" name="service" value="Whitening"><span>Whitening</span></label>
+              <label><input type="radio" name="service" value="Family Plan"><span>Family Plan</span></label>
+              <label><input type="radio" name="service" value="Something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Who is the visit for?</legend>
+            <div class="chips">
+              <label><input type="radio" name="patient" value="Me" checked><span>Me</span></label>
+              <label><input type="radio" name="patient" value="My child"><span>My child</span></label>
+              <label><input type="radio" name="patient" value="The whole family"><span>The whole family</span></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="c-practice">Practice</label>
+            <select id="c-practice" name="practice">
+              <option>Either is fine</option>
+              <option>Orchard Row</option>
+              <option>Wetherell Quay</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-time">Preferred time <span>(optional)</span></label>
+            <select id="c-time" name="preferred_time">
+              <option value="">Any time</option>
+              <option>Weekday morning</option>
+              <option>Weekday afternoon</option>
+              <option>After school, 15:00–18:00</option>
+              <option>Late evening, Wetherell Quay</option>
+              <option>Saturday morning</option>
+            </select>
+          </div>
+          <div class="field full"><label for="c-msg">Anything we should know? <span>(optional)</span></label>
+            <textarea id="c-msg" name="message" maxlength="1000" aria-describedby="c-msg-hint" placeholder="For example: we'd like back-to-back slots for two kids."></textarea>
+            <p class="hint" id="c-msg-hint"><svg aria-hidden="true"><use href="#i-info"/></svg>Please don't include medical details here — we'll talk about them in person.</p>
+          </div>
+          <p class="status" data-status role="status" aria-live="polite"></p>
+          <div class="send">
+            <button class="pill ink" type="submit"><span data-send-label>Send request</span><span class="arr"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+            <p class="credit">Powered by <a href="https://formgong.com" rel="noopener">Formgong</a></p>
+          </div>
+          <div class="thanks" tabindex="-1">
+            <div class="sunmark" aria-hidden="true"><svg viewBox="0 0 40 44"><use href="#mark"/></svg></div>
+            <strong>Thanks, <span data-name>there</span>!</strong>
+            <p>We'll call or email within one working day to find a time that suits you.</p>
+            <button type="button" data-again>Send another request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-about">
+      <a class="logo" href="#top"><svg viewBox="0 0 40 44" aria-hidden="true"><use href="#mark"/></svg><span><b>Brightmoss</b><small>Family dental</small></span></a>
+      <p>A family dental practice in Tansy Cross. Brightmoss, its team and its reviews are fictional, made for a website template.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3>Practices</h3>
+      <address><ul><li>14 Orchard Row<br>Tansy Cross TX4 2LB</li><li style="margin-top:14px">3 Wetherell Quay<br>Tansy Cross TX4 7QA</li></ul></address>
+    </div>
+    <div>
+      <h3>Treatments</h3>
+      <ul><li><a href="#treatments">Family check-ups</a></li><li><a href="#treatments">Children's dentistry</a></li><li><a href="#treatments">Emergency appointments</a></li><li><a href="#treatments">Clear aligners</a></li><li><a href="#plans">Family Plan</a></li></ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul><li><a href="tel:+441632960214">01632 960 214</a></li><li><a href="mailto:hello@brightmoss.example">hello@brightmoss.example</a></li><li>Mon–Fri 8:00–18:30</li><li>Sat 9:00–13:00</li></ul>
+    </div>
+  </div>
+  <div class="giant" aria-hidden="true" data-giant>brightmoss</div>
+  <div class="foot-base"><span>© 2026 Brightmoss Dental</span><span>Sample content for a website template</span><a href="#top">Back to top ↑</a></div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Reveal blocks as they enter the screen.
+  var revealables = $$("[data-reveal], [data-giant]");
+  if ("IntersectionObserver" in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+    revealables.forEach(function (el) { io.observe(el); });
+  } else {
+    revealables.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  // Footer wordmark: one span per letter so they rise one after another.
+  var giant = $("[data-giant]");
+  giant.innerHTML = giant.textContent.split("").map(function (c, i) { return '<span style="--i:' + i + '">' + c + "</span>"; }).join("");
+
+  // Header: solid once you scroll, mobile menu, and a sun dot under the section you are in.
+  var head = $(".site-head"), menuBtn = $(".menu-btn"), nav = $("#menu"), dot = $(".nav .dot");
+  function setMenu(open) {
+    menuBtn.setAttribute("aria-expanded", String(open));
+    head.classList.toggle("open", open);
+    document.documentElement.style.overflow = open ? "hidden" : "";
+  }
+  menuBtn.addEventListener("click", function () { setMenu(menuBtn.getAttribute("aria-expanded") !== "true"); });
+  $$("a", nav).forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && head.classList.contains("open")) { setMenu(false); menuBtn.focus(); } });
+
+  var links = $$('a[href^="#"]', nav).filter(function (a) { return !a.classList.contains("menu-cta"); });
+  function moveDot(a) {
+    links.forEach(function (l) { l.classList.toggle("active", l === a); });
+    if (!a) { dot.style.opacity = "0"; return; }
+    dot.style.opacity = "1"; dot.style.width = a.offsetWidth + "px"; dot.style.transform = "translateX(" + a.offsetLeft + "px)";
+  }
+  if ("IntersectionObserver" in window) {
+    var current = null;
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var link = links.filter(function (l) { return l.getAttribute("href") === "#" + e.target.id; })[0];
+        if (e.isIntersecting) current = link; else if (current === link) current = null;
+      });
+      moveDot(current);
+    }, { rootMargin: "-45% 0px -54% 0px" });
+    links.forEach(function (l) { var s = $(l.getAttribute("href")); if (s) spy.observe(s); });
+  }
+
+  // Statement: words fill in as you scroll through the section.
+  var fill = $("[data-fill]");
+  fill.innerHTML = fill.textContent.trim().split(/\s+/).map(function (w) { return '<span class="w">' + w + "</span>"; }).join(" ");
+  var words = $$(".w", fill), statement = $(".statement"), floats = $$("[data-speed]");
+
+  // How a visit works: on wide screens the wheel turns as you scroll.
+  var visit = $(".visit"), ring = $(".wheel-ring"), dots = $$(".wheel-dot"), steps = $$(".step"), now = $("[data-now]");
+  var wide = matchMedia("(min-width: 961px)");
+  var wheelOn = false, STEP = 40;
+  function setWheel() {
+    wheelOn = wide.matches && !reduce;
+    visit.classList.toggle("wheel-on", wheelOn);
+    if (!wheelOn) steps.forEach(function (s) { s.classList.remove("on"); });
+  }
+  setWheel();
+  if (wide.addEventListener) wide.addEventListener("change", function () { setWheel(); tick(); });
+
+  var team = $$(".person:nth-child(even)");
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+  var ticking = false;
+  function tick() {
+    ticking = false;
+    var vh = innerHeight;
+    head.classList.toggle("stuck", scrollY > 40);
+    if (reduce) return;
+
+    var r = statement.getBoundingClientRect();
+    var p = clamp((vh * 0.8 - r.top) / (r.height * 0.55), 0, 1);
+    var lit = Math.round(p * words.length);
+    words.forEach(function (w, i) { w.classList.toggle("on", i < lit); });
+    var mid = r.top + r.height / 2 - vh / 2;
+    if (innerWidth > 1180) floats.forEach(function (f) { f.style.translate = "0 " + clamp(mid * parseFloat(f.dataset.speed), -110, 110).toFixed(1) + "px"; });
+    else floats.forEach(function (f) { f.style.translate = ""; });
+
+    if (wheelOn) {
+      var vr = visit.getBoundingClientRect();
+      var q = clamp(-vr.top / (vr.height - vh), 0, 1) * (steps.length - 1);
+      var active = Math.round(q);
+      ring.style.setProperty("--rot", (-q * STEP).toFixed(2) + "deg");
+      dots.forEach(function (d, i) { d.classList.toggle("on", i === active); });
+      steps.forEach(function (s, i) { s.classList.toggle("on", i === active); });
+      now.textContent = "0" + (active + 1);
+    }
+
+    if (innerWidth > 720) team.forEach(function (t) { var tr = t.parentNode.getBoundingClientRect(); t.style.translate = "0 " + clamp((tr.top + tr.height / 2 - vh / 2) * -0.1, -60, 60).toFixed(1) + "px"; });
+    else team.forEach(function (t) { t.style.translate = ""; });
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(tick); } }
+  addEventListener("scroll", onScroll, { passive: true });
+  addEventListener("resize", onScroll);
+  tick();
+
+  // Numbers count up once.
+  var counters = $$("[data-count]");
+  function fmt(n) { return n.toLocaleString("en-GB"); }
+  if ("IntersectionObserver" in window && !reduce) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        var el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || "", t0 = performance.now();
+        (function step(t) {
+          var k = Math.min(1, (t - t0) / 1600), v = Math.round(end * (1 - Math.pow(1 - k, 3)));
+          el.textContent = fmt(v) + suf;
+          if (k < 1) requestAnimationFrame(step);
+        })(t0);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (c) { cio.observe(c); });
+  }
+
+  // Reviews: copy the cards once so the marquee loops without a gap.
+  var track = $(".track");
+  if (!reduce) $$(".review", track).forEach(function (li) { var c = li.cloneNode(true); c.setAttribute("aria-hidden", "true"); track.appendChild(c); });
+
+  // Price list tabs.
+  var tabs = $$('[role="tab"]');
+  function select(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab, panel = document.getElementById(t.getAttribute("aria-controls"));
+      t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1;
+      panel.hidden = !on; panel.classList.toggle("shown", on);
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { select(t); });
+    t.addEventListener("keydown", function (e) {
+      var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (d) { e.preventDefault(); select(tabs[(i + d + tabs.length) % tabs.length], true); }
+    });
+  });
+
+  // A treatment card or a practice link fills in the form.
+  var form = $("#f-contact");
+  $$("[data-service]").forEach(function (a) {
+    a.addEventListener("click", function () { var r = form.querySelector('input[name="service"][value="' + a.dataset.service + '"]'); if (r) r.checked = true; });
+  });
+  $$("[data-practice]").forEach(function (a) {
+    a.addEventListener("click", function () { form.elements.namedItem("practice").value = a.dataset.practice; });
+  });
+
+  // Form: thanks only when Formgong answers success: true.
+  var button = $('button[type="submit"]', form), label = $("[data-send-label]", form), status = $("[data-status]", form);
+  function say(text, bad) { status.textContent = text; status.classList.toggle("err", !!bad); }
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    button.disabled = true; label.textContent = "Sending…"; say("");
+    var first = (form.elements.namedItem("name").value || "").trim().split(/\s+/)[0];
+    fetch(form.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
+      .then(function (res) { return res.json().catch(function () { return null; }); })
+      .then(function (result) {
+        if (result && result.success === true) {
+          $("[data-name]", form).textContent = first || "there";
+          form.reset();
+          form.classList.add("is-sent");
+          $(".thanks", form).focus();
+        } else {
+          say((result && result.message) || "Could not send. Please try again, or call us on 01632 960 214.", true);
+        }
+      })
+      .catch(function () { say("Could not send. Check your connection and try again.", true); })
+      .then(function () { button.disabled = false; label.textContent = "Send request"; });
+  });
+  $("[data-again]", form).addEventListener("click", function () { form.classList.remove("is-sent"); say(""); form.elements.namedItem("name").focus(); });
+})();
+</script>
+</body>
+</html>
