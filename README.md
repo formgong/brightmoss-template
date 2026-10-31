@@ -50,6 +50,8 @@ Blocks rise into view as you scroll. Without JavaScript everything is visible an
 
 **Sample content.** The reviews, the team, the prices, the plan, the addresses and the phone number are made up for the demo. Replace them with your own before you publish.
 
+The "Powered by Formgong" links point to `https://formgong.com/review-page/fk_your_access_key`, so the same find and replace covers them. Once your key is in, the first click from your published site makes your own public review page on Formgong, where clients read and leave reviews, and every later click opens it. Switch the page off in Formgong (Reviews → your site → Settings) or change those links.
+
 ## Українська
 
 Яскравий односторінковий сайт для сімейної або дитячої стоматології: один файл `index.html` і тека `img/`. Клініка Brightmoss Dental у містечку Tansy Cross, її команда, відгуки, ціни, адреси й телефон вигадані для прикладу.
@@ -82,3 +84,5 @@ Blocks rise into view as you scroll. Without JavaScript everything is visible an
 **Приклад змісту.** Відгуки, команда, ціни, план, адреси й телефон вигадані. Перед публікацією замініть їх своїми.
 
 MIT license.
+
+Посилання «Powered by Formgong» ведуть на `https://formgong.com/review-page/fk_your_access_key`, тож та сама заміна ключа оновить і їх. Коли ключ стоїть, перший перехід з вашого опублікованого сайту створює вашу публічну сторінку відгуків на Formgong, де клієнти читають і залишають відгуки; далі посилання відкриває її. Вимкнути сторінку можна у Formgong (Відгуки → ваш сайт → Налаштування) або змінити ці посилання.
